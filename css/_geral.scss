@@ -1,0 +1,80 @@
+//HEADER
+header {
+  min-height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-background-color);
+  position: relative;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../assets/img/banner/florest.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 90%;
+  filter: saturate(0);
+  opacity: .3;
+}
+
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.header-container p {
+  padding-bottom: 40px;
+}
+
+.header-container button {
+  background-color: transparent;
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.header-container button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: .5s;
+}
+
+.personagens {
+  width: 100%;
+  max-width: 900px;
+  position: absolute;
+}
+
+.personagens#top-personagens {
+  height: 100%;
+  background-color: var(--character-top-image-color);
+
+  background-color: var(--character-top-image-color);
+  mask: var(--character-top-image-src) bottom / 100% no-repeat;
+  -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
+}
+
+//MAIN
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personagens#bottom-personagens {
+  height: 500px;
+  background-color: var(--character-bottom-image-color);
+  transform: rotate(180deg) scaleX(-1);
+  position: relative;
+
+  mask: var(--character-bottom-image-src) bottom / contain no-repeat;
+  -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
+}
