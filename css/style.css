@@ -64,7 +64,6 @@ img {
 p {
   line-height: 1.5;
   color: var(--highlight-color);
-  text-align: center;
   font-size: 1.25rem;
 }
 
@@ -84,6 +83,17 @@ h1, h2, h3 {
   color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  place-content: space-between;
+  margin: 0 50px 80px 50px;
+}
+
+.formulario {
+  flex-direction: column;
 }
 
 :root {
@@ -162,6 +172,7 @@ header::before {
 
 .header-container p {
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .header-container button {
@@ -203,4 +214,39 @@ main {
   position: relative;
   mask: var(--character-bottom-image-src) bottom/contain no-repeat;
   -webkit-mask: var(--character-bottom-image-src) bottom/100% no-repeat;
+}
+
+.section-texto {
+  width: 50%;
+  align-content: center;
+}
+
+.mundo-invertido {
+  align-items: center;
+}
+
+.mundo-invertido .section-texto h1 {
+  max-width: 300px;
+}
+
+.trailer iframe {
+  background-color: var(--primary-color);
+  box-shadow: -20px 15px 0px var(--primary-color);
+}
+
+.trailer .section-texto {
+  text-align: end;
+}
+
+.galeria .container {
+  display: flex;
+  gap: 50px;
+}
+
+.img-galeria {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 25px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 20px 20px 0 var(--field-background-color);
 }/*# sourceMappingURL=style.css.map */

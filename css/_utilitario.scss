@@ -10,7 +10,6 @@ img {
 p {
   line-height: 1.5;
   color: var(--highlight-color);
-  text-align: center;
   font-size: 1.25rem;
 }
 
@@ -30,4 +29,15 @@ h1, h2, h3 {
   color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  place-content: space-between;
+  margin: 0 50px 80px 50px;
+}
+
+.formulario {
+  flex-direction: column;
 }

@@ -33,6 +33,7 @@ header::before {
 
 .header-container p {
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .header-container button {
@@ -77,4 +78,41 @@ main {
 
   mask: var(--character-bottom-image-src) bottom / contain no-repeat;
   -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
+}
+
+//SECTION MUNDO INVERTIDO
+.section-texto {
+  width: 50%;
+  align-content: center;
+}
+
+.mundo-invertido {
+  align-items: center;
+}
+
+.mundo-invertido .section-texto h1 {
+  max-width: 300px;
+}
+
+//SECTION VIDEO
+.trailer iframe {
+  background-color: var(--primary-color);
+  box-shadow: -20px 15px 0px var(--primary-color);
+}
+
+.trailer .section-texto {
+  text-align: end;
+}
+
+.galeria .container {
+  display: flex;
+  gap: 50px;
+}
+
+.img-galeria {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 25px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 20px 20px 0 var(--field-background-color);
 }
