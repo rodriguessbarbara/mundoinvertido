@@ -99,6 +99,8 @@ main {
 }
 
 .trailer iframe {
+  width: 460px;
+  height: 250px;
   background-color: var(--primary-color);
   box-shadow: -20px 15px 0px var(--primary-color);
 }
@@ -119,7 +121,7 @@ main {
 
 .galeria ul {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .img-galeria {
@@ -171,9 +173,14 @@ form {
 }
 
 form input {
-  padding: 10px 100px;
+  padding: 10px 160px 10px 5px;
   margin-bottom: 20px;
   margin-top: 2px;
+}
+
+form input, textarea {
+  background-color: var(--page-background);
+  border: 2px solid var(--highlight-color);
 }
 
 form button {
@@ -194,12 +201,12 @@ form button:hover {
 //FOOTER
 footer {
   margin: 0;
-  background-color: var(--highlight-color);
+  background-color: var(--footer-background-color);
   text-align: center;
 }
 
 footer p {
-  padding: 15px 0;
+  padding: 20px 0;
   font-size: 1rem;
-  color: var(--primary-color-contrast);
+  color: var(--highlight-color);
 }

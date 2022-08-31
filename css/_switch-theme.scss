@@ -5,12 +5,7 @@
 }
 
 .light-theme {
-  --page-background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #ffffff 65%,
-    rgba(255, 255, 255, 0.75) 100%
-  );
+  --page-background:#fff4f4;
   --header-background-color: #e3e3e3;
   --highlight-color: #000;
   --featured-font-family: "Archivo", sans-serif;
@@ -20,15 +15,11 @@
   --character-bottom-image-color: #e5e5e5;
   --background-lamp-image: url("/assets/img/backgrounds/lamps.png");
   --footer-background-color: #b5bbbf;
+  --music: url("assets/musics/normal-world.mpeg");
 }
 
 .dark-theme {
-  --page-background: linear-gradient(
-    180deg,
-    #050000 0%,
-    #130404 65%,
-    rgba(19, 1, 1, 0.75) 100%
-  );
+  --page-background:#050000;
   --header-background-color: #220f0f;
   --highlight-color: #ffffff;
   --featured-font-family: "Rubik Glitch", sans-serif;
@@ -38,4 +29,5 @@
   --character-top-image-color: #000;
   --background-lamp-image: url("/assets/img/backgrounds/lamps-inverted.png");
   --footer-background-color: #000;
+  --music: url("assets/musics/inverted-world.mpeg");
 }

@@ -5,13 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo Invertido</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Aref+Ruqaa&family=Merriweather&family=PT+Mono&family=Poppins:wght@600;800&family=Rubik+Glitch&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body class="light-theme" aria-label="tema claro aplicado ao site">
   <header aria-label="Cabeçalho da página.">
-    <audio id="music">
-      <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+    <audio id="music" autoplay>
+      <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" id="music-src"/>
     </audio>
 
     <div class="header-container">
@@ -23,7 +28,7 @@
         Vecna. Você está preparado? Então clique no botão abaixo para entrar
         no Mundo Invertido!
       </p>
-      <button id="switch-theme-button" onclick="switchTheme()">Inverter Mundos</button>
+      <button id="switch-theme-button">Inverter Mundos</button>
     </div>
 
     <div class="personagens" id="top-personagens"></div>
@@ -44,7 +49,6 @@
   <section class="trailer container">
     <div class="trailer-video" aria-hidden="true">
       <iframe
-        width="460" height="250"
         src="https://www.youtube.com/embed/otutSrxYpa4?controls=0"
         title="YouTube video player"
         frameborder="0"
@@ -112,7 +116,7 @@
   </p>
 </footer>
 
-<script type="module" src="assets/js/script.js"></script>
+<script type="module" src="/script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,64 @@
+@media (max-width: 1200px) {
+  .mundo-invertido img {
+    max-width: 300px;
+  }
+  .galeria .titulo, .trailer {
+    margin: 40px 30px;
+  }
+  .trailer iframe {
+      width: 400px;
+      height: 200px;
+  }
+  .img-galeria {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  h1, h2, h3 {
+    font-size: 2.5rem;
+  }
+  .galeria {
+    display: block;
+  }
+  .galeria ul {
+    gap: 50px;
+  }
+  .formulario-conteudo {
+    display: block;
+  }
+  form {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 1rem;
+  }
+  .section-texto  {
+    width: 100%;
+  }
+  .mundo-invertido .section-texto h1 {
+    max-width: 600px;
+    text-align: center;
+  }
+  .mundo-invertido {
+    display: block;
+    margin: 0 auto;
+    max-width: max-content;
+  }
+  .mundo-invertido img {
+    display: none;
+  }
+  .trailer {
+    display: block;
+  }
+  .trailer .titulo {
+    margin-top: 40px;
+  }
+  form input {
+    padding: 10px 120px 10px 5px;
+  }
+}
